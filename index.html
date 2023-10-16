@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      /* Custom styles go here */
+      .user-icon {
+        width: 50px;
+        height: 50px;
+        background-color: #ffcdb2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+
+      .logout-btn {
+        background-color: #f9a8d4;
+        color: #6b2737;
+      }
+    </style>
+  </head>
+
+  <body class="bg-brown-500 text-gray-900">
+    <div class="relative flex flex-col items-center justify-center p-4 bg-brown-500 min-h-screen">
+      <div class="user-icon mb-2">
+        <!-- User Icon or Avatar SVG -->
+        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 2C6.48 2 2 6.48 2 12c0 5.53 4.48 10 10 10s10-4.47 10-10c0-5.52-4.48-10-10-10zm6.37 14.85c-1.36 1.2-3.1 1.9-4.9 1.9s-3.54-.7-4.9-1.9C5.25 15.53 4 13.87 4 12c0-2.9 2.24-5.26 5-5.26 1.7 0 3.22.85 4.12 2.14.36.48 1.06.56 1.54.2.48-.36.56-1.06.2-1.54C15.9 5.32 14.56 4.96 13 5.09c-2.12.23-3.86 1.75-4.3 3.85-.56 2.38 1.27 4.55 3.65 5.1.5.09.92-.36.92-.9v-.24c.84-.78 2.04-1.2 3.3-1.2s2.46.42 3.3 1.20v.24c0 .54.42.98.96 1 .04.02.08.02.12 0 .52-.1 1-.46 1.26-.96.36-.48.28-1.08-.2-1.54z"
+          ></path>
+        </svg>
+      </div>
+      <svg class="h-20 w-20 text-white mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9s1.5-1 1.5-4-1.5-4-1.5-4h-9S7.5 1 7.5 4s1.5 4 1.5 4-1.5 1-1.5 4S5 14 12 14s7-3 6-5zM12 14v6m0 0V14m0 6h6m-6 0H6"></path>
+      </svg>
+      <span class="text-2xl font-semibold mb-4">Welcome to Your Dashboard</span>
+
+      <div class="flex items-center gap-x-2">
+        <div class="user-icon mr-2">
+          <!-- User Icon or Avatar SVG -->
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 2C6.48 2 2 6.48 2 12c0 5.53 4.48 10 10 10s10-4.47 10-10c0-5.52-4.48-10-10-10zm6.37 14.85c-1.36 1.2-3.1 1.9-4.9 1.9s-3.54-.7-4.9-1.9C5.25 15.53 4 13.87 4 12c0-2.9 2.24-5.26 5-5.26 1.7 0 3.22.85 4.12 2.14.36.48 1.06.56 1.54.2.48-.36.56-1.06.2-1.54C15.9 5.32 14.56 4.96 13 5.09c-2.12.23-3.86 1.75-4.3 3.85-.56 2.38 1.27 4.55 3.65 5.1.5.09.92-.36.92-.9v-.24c.84-.78 2.04-1.2 3.3-1.2s2.46.42 3.3 1.20v.24c0 .54.42.98.96 1 .04.02.08.02.12 0 .52-.1 1-.46 1.26-.96.36-.48.28-1.08-.2-1.54z"
+            ></path>
+          </svg>
+        </div>
+        <span class="text-lg font-semibold">Hello, Username!</span>
+      </div>
+
+      <a href="login.html" class="p-2 text-white hover:text-gray-900 transition duration-300 rounded-lg flex flex-col items-center logout-btn mt-8">
+        <svg class="h-6 w-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        <span class="text-xs">Logout</span>
+      </a>
+    </div>
+
+    <!-- ... your content here ... -->
+  </body>
+</html>

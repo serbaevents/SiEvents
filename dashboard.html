@@ -1109,6 +1109,31 @@
         </div>
     </footer>
 
+    <!--JS SIGNIN-->
+    <script type="module">
+        // Nama cookie yang akan diperiksa
+    
+    
+        import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
+        const cookieName = "token";
+    
+        // Periksa apakah cookie ada dengan menggunakan fungsi dari file cookieUtil.js
+        if (!getCookie(cookieName)) {
+          // Jika cookie tidak ada, arahkan kembali ke halaman signin
+          window.location.href = "signin.html";
+        }
+      </script>
+
+      <script>
+        function logout(){
+          let konfirmasi= confirm ('Apakah yakin akan logout?') 
+          if (konfirmasi) {
+            deleteCookie("token");
+          }
+          
+        }
+      </script>
+          <script src="sijs/main.js"></script>
 </body>
 
 <!-- Bootstrap Script JavaScript Files -->

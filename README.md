@@ -10,3 +10,5 @@ Username dan password untuk test
 Username : "serbaevent"
 Password : "begitulah
 ```
+
+NOTE: penting diingat, disaat login membutuh waktu sedikit, harap bersabar ^^
